@@ -55,7 +55,7 @@
   font-family: Yesteryear;
   font-size: 64px;
   font-weight: 400;
-  margin-top: -25px;
+  margin-top: -30px;
 }
 .btn-header {
   display: flex;
@@ -74,6 +74,7 @@
   padding: 8px 32px;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
 }
 .btn-gold:hover {
   background-color: #cf9d65;
@@ -90,6 +91,7 @@
   padding: 8px 32px;
   text-transform: uppercase;
   font-weight: bold;
+  cursor: pointer;
 }
 .btn-black:hover {
   background-color: #212121;
@@ -97,4 +99,34 @@
 .btn-black:active {
   background-color: #212121;
   transform: translateY(4px);
+}
+/***** Services *****/
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 128px 0;
+  gap: 100px;
+  background: #f0e9df;
+}
+.services-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services-item img {
+  height: 75px;
+  margin-bottom: 64px;
+}
+.services-item h3 {
+  text-align: center;
+  color: #212123;
+  font-family: Montserrat;
+  font-size: 18px;
+}
+.services-item p {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  margin-top: 16px;
 }
