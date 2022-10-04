@@ -214,3 +214,51 @@
   background: #cea46f;
   border-radius: 5px;
 }
+.horario-atedimento-bg {
+  background: #f0e9df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 65px;
+  gap: 128px;
+}
+.horario-atedimento-text {
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 104px;
+  margin-bottom: 104px;
+  text-align: right;
+  color: #212123;
+}
+.barra {
+  border-radius: 2px;
+  height: 225px;
+  border: 2px solid #212123;
+  margin-left: 128px;
+  margin-right: 128px;
+}
+.horario h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  color: #212123;
+}
+.horario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #4f4f51;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
