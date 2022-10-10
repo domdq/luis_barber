@@ -45,6 +45,7 @@
   background-repeat: no-repeat;
   height: 800px;
   background-size: cover;
+  background-position: center center;
   color: #fcf2e4;
 }
 .banner h1 {
@@ -133,6 +134,7 @@
 /* section */
 .planasprice-bg {
   background: #212123;
+  padding: 128px 0;
 }
 .plan-title {
   display: flex;
@@ -143,7 +145,6 @@
 }
 .plan-title h1 {
   color: #cea46f;
-  margin-top: 128px;
   font-size: 32px;
 }
 .plan-title h2 {
@@ -161,7 +162,7 @@
 }
 
 .plan-item ul {
-  margin-bottom: 119px;
+  margin-bottom: 64px;
 }
 .plan-item li {
   list-style: none;
@@ -177,10 +178,9 @@
   font-size: 16px;
   padding: 36px 36px;
   border-radius: 10px;
-  margin-bottom: 129px;
 }
 .plan-item button {
-  margin-top: 65px;
+  margin-top: 32px;
   padding: 11px;
   border: 1px solid #cea46f;
   border-radius: 5px;
@@ -214,6 +214,7 @@
   background: #cea46f;
   border-radius: 5px;
 }
+/* Horario e atedimento */
 .horario-atedimento-bg {
   background: #f0e9df;
   display: flex;
@@ -227,8 +228,6 @@
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 700;
-  margin-top: 104px;
-  margin-bottom: 104px;
   text-align: right;
   color: #212123;
 }
@@ -237,8 +236,6 @@
   border-radius: 2px;
   height: 200px;
   border: 2px solid #212123;
-  margin-left: 128px;
-  margin-right: 128px;
 }
 .horario h1 {
   font-family: "Montserrat";
@@ -295,9 +292,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 16px;
   margin-top: 32px;
   margin-bottom: 16px;
+  width: 540px;
+}
+.form-group {
+  display: flex;
+  gap: 16px;
 }
 .form input {
   width: 260px;
@@ -307,6 +310,7 @@
   padding: 10px 16px;
   font-family: "Montserrat";
   font-size: 14px;
+  color: #fcf2e4;
 }
 .section-form textarea {
   background: #2c2c2e;
@@ -315,8 +319,9 @@
   border-radius: 7px;
   padding: 17px 16px;
   margin-bottom: 16px;
-  width: 540px;
   height: 185px;
+  width: 100%;
+  color: #fcf2e4;
 }
 #btn {
   background: #cea46f;
@@ -326,4 +331,96 @@
   border-radius: 7px;
   border: none;
   padding: 16px 83px;
+}
+/* Rodape */
+.footer-bg {
+  background: #212123;
+  border-top: 1px solid #cea46f;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.footer-items {
+  color: #645e57;
+  font-family: Montserrat;
+  font-size: 17px;
+  text-align: right;
+  margin-bottom: 8px;
+  padding: 39px 128px;
+}
+/* Responsivo */
+@media screen and (max-width: 420px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav-info {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .nav-info div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .nav-info div #phone {
+    width: 250px;
+  }
+  .banner {
+    height: 600px;
+  }
+  .btn-header {
+    flex-direction: column;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .plan-price {
+    flex-direction: column;
+  }
+  .plan-item {
+    width: 300px;
+  }
+  .price-save {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .horario-atedimento-bg {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .horario-atedimento-text {
+    font-size: 18px;
+  }
+  .barra {
+    height: 100px;
+  }
+  .section-form {
+    padding: 64px 32px;
+  }
+  .title-form p {
+    text-align: center;
+  }
+  .form-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .form-group input {
+    width: 100%;
+  }
+  .form {
+    width: 320px;
+  }
+  .footer-items {
+    padding: 32px;
+    text-align: center;
+  }
+  .footer {
+    justify-content: center;
+  }
 }

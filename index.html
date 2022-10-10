@@ -23,7 +23,9 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Contato</a></li>
-        <li> <a href="tel:+5563912345678" id="phone"> <img src="./img/phone.svg" alt=""> <span>+55 63 9 1234-5678</span></a> </li>
+        <div>
+          <li> <a href="tel:+5563912345678" id="phone"> <img src="./img/phone.svg" alt=""> <span>+55 63 9 1234-5678</span></a> </li>
+        </div>
       </ul>
     </nav>
   </div>
@@ -147,13 +149,11 @@
       <h1>Horário de <br> Atendimento</h1>
     </div>
 
-    <div class="barra">
-      <span></span>
-    </div>
+    <div class="barra"></div>
 
     <div class="horario-item">
       <div class="semana">
-        <h1>Seg Ás Sex</h1>
+        <h1>SEG Á SEX</h1>
         <div class="horario">
           <img src="./img/Ellipse 3.svg" alt="">
           <p>08h ás 12 | 14h ás 18h</p>
@@ -161,7 +161,7 @@
       </div>
 
       <div class="finaldesemana">
-        <h1>Sábado</h1>
+        <h1>SÀBADO</h1>
         <div class="horario">
           <img src="./img/Ellipse 3.svg" alt="">
           <p>08h ás 12</p>
@@ -177,13 +177,25 @@
         <p>Mande sua mensagem para conversamos um melhor horário pra você</p>
       </div>
       <form class="form">
-        <input type="text" name="name" placeholder="Nome">
-        <input type="e-mail" name="e-mail" placeholder="E-mail">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Nome">
+          <input type="email" name="e-mail" placeholder="E-mail">
+        </div>
+        <textarea name="message" placeholder="Digite sua Mensagem"></textarea>
+        <input type="submit" value="Enviar" id="btn">
       </form>
-      <textarea name="message" placeholder="Digite sua Mensagem"></textarea>
-      <input type="submit" value="Enviar" id="btn">
+
     </div>
   </section>
+  <footer class="footer-bg">
+    <div class="footer">
+      <div id="linha"></div>
+      <div class="footer-items">
+        <p>Code: Dominique Albuquerque</p>
+        <P>UI: Leonardo Albuquerque</P>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
